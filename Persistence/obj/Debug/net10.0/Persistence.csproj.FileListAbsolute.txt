@@ -1,0 +1,6 @@
+/Users/burakilhan/Desktop/MealMentorC#/Persistence/obj/Debug/net10.0/Persistence.csproj.AssemblyReference.cache
+/Users/burakilhan/Desktop/MealMentorC#/Persistence/obj/Debug/net10.0/Persistence.GeneratedMSBuildEditorConfig.editorconfig
+/Users/burakilhan/Desktop/MealMentorC#/Persistence/obj/Debug/net10.0/Persistence.AssemblyInfoInputs.cache
+/Users/burakilhan/Desktop/MealMentorC#/Persistence/obj/Debug/net10.0/Persistence.AssemblyInfo.cs
+/Users/burakilhan/Desktop/MealMentorC#/Persistence/obj/Debug/net10.0/Persistence.csproj.CoreCompileInputs.cache
+/Users/burakilhan/Desktop/MealMentorC#/Persistence/obj/Debug/net10.0/Persistence.sourcelink.json

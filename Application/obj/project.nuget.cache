@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "hksG1llWG8I=",
+  "success": true,
+  "projectFilePath": "/Users/burakilhan/Desktop/MealMentor/Application/Application.csproj",
+  "expectedPackageFiles": [
+    "/Users/burakilhan/.nuget/packages/mediatr/12.2.0/mediatr.12.2.0.nupkg.sha512",
+    "/Users/burakilhan/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
+    "/Users/burakilhan/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "/Users/burakilhan/.nuget/packages/microsoft.netcore.app.ref/9.0.3/microsoft.netcore.app.ref.9.0.3.nupkg.sha512",
+    "/Users/burakilhan/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.3/microsoft.aspnetcore.app.ref.9.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

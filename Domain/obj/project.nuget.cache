@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Jfi8ZhxTmG0=",
+  "success": true,
+  "projectFilePath": "/Users/burakilhan/Desktop/MealMentor/Domain/Domain.csproj",
+  "expectedPackageFiles": [
+    "/Users/burakilhan/.nuget/packages/microsoft.netcore.app.ref/9.0.3/microsoft.netcore.app.ref.9.0.3.nupkg.sha512",
+    "/Users/burakilhan/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.3/microsoft.aspnetcore.app.ref.9.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
