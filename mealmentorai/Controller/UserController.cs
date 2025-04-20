@@ -25,7 +25,7 @@ namespace mealmentorai.Controller
         public async Task<IActionResult> CreateUser([FromBody] CreateUserRequest request)
         {
             var result = await _mediator.Send(request);
-            return Ok(result);
+            return Ok();
         }
         
     }

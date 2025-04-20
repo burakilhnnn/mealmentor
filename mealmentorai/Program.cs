@@ -1,4 +1,11 @@
 using Microsoft.OpenApi.Models;
+using MediatR;
+using System.Reflection;
+using Application;
+using Persistence.Context;
+using Persistence.UnitOfWorks;
+using Application.Common.IUnitOfWorks;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +20,20 @@ builder.Services.AddSwaggerGen(c =>
         Version = "v1",
         Description = "MealMentor API Documentation"
     });
+});
+
+// Add DbContext
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// Add UnitOfWork
+builder.Services.AddScoped<IUnitOfWorks, UnitOfWork>();
+
+// Add MediatR
+builder.Services.AddMediatR(cfg => 
+{
+    cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
+    cfg.RegisterServicesFromAssembly(AssemblyReference.Assembly);
 });
 
 var app = builder.Build();

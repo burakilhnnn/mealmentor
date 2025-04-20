@@ -176,3 +176,4 @@
 /Users/burakilhan/Desktop/MealMentor/mealmentorai/obj/Debug/net9.0/mealmentorai.pdb
 /Users/burakilhan/Desktop/MealMentor/mealmentorai/obj/Debug/net9.0/mealmentorai.genruntimeconfig.cache
 /Users/burakilhan/Desktop/MealMentor/mealmentorai/obj/Debug/net9.0/ref/mealmentorai.dll
+/Users/burakilhan/Desktop/MealMentor/mealmentorai/obj/Debug/net9.0/mealmentorai.sourcelink.json
