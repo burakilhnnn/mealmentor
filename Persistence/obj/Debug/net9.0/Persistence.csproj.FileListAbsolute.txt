@@ -54,3 +54,4 @@
 /Users/burakilhan/Desktop/MealMentor/Persistence/obj/Debug/net9.0/Persistence.pdb
 /Users/burakilhan/Desktop/MealMentor/Persistence/obj/Debug/net9.0/Persistence.genruntimeconfig.cache
 /Users/burakilhan/Desktop/MealMentor/Persistence/obj/Debug/net9.0/ref/Persistence.dll
+/Users/burakilhan/Desktop/MealMentor/Persistence/obj/Debug/net9.0/Persistence.sourcelink.json

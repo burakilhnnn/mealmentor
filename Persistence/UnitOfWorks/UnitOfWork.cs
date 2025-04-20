@@ -13,6 +13,8 @@ namespace Persistence.UnitOfWorks
     {
         private readonly AppDbContext _context;
         private IUserRepository _users;
+        private IUserDetailRepository _userDetails;
+        private IHistoryRepository _histories;
 
         public UnitOfWork(AppDbContext context)
         {
@@ -38,6 +40,22 @@ namespace Persistence.UnitOfWorks
                 return _users;
             }
         }
-      
+
+        public IUserDetailRepository UserDetails
+        {
+            get
+            {
+                return new UserDetailRepository(_context);
+            }
+        }
+
+        public IHistoryRepository Histories
+        {
+            get
+            {
+                return new HistoryRepository(_context);
+            }
+
+        }
     }
 }

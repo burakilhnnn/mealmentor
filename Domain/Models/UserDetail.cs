@@ -7,6 +7,18 @@ namespace Domain.Models
 {
     public class UserDetail
     {
+
+        public UserDetail(string sex, int age, int height, int weight, string activityLevel, string goal, string rateOfFatLossMuscleGain)
+        {
+            Sex = sex;
+            Age = age;
+            Height = height;
+            Weight = weight;
+            ActivityLevel = activityLevel;
+            Goal = goal;
+            RateOfFatLossMuscleGain = rateOfFatLossMuscleGain;
+        }
+
         public Guid UserId { get; set; }
         public string Sex { get; set; }
         public int Age { get; set; }
@@ -14,17 +26,17 @@ namespace Domain.Models
         public int Weight { get; set; }
         public string ActivityLevel { get; set; }
         public string Goal { get; set; }
-        public string rateOfFatLossMuscleGain { get; set; }
-        public double poundsToLoseGainPerWeek { get; set; }
-        public int bmr { get; set; }
-        public int tdee { get; set; }
-        public int dailyCalories { get; set; }
-        public int proteinGrams { get; set; }
-        public int carbsGrams { get; set; }
-        public int fatGrams { get; set; }
-        public int percentProtein { get; set; }
-        public int percentCarbs { get; set; }
-        public int percentFat { get; set; }
-        public bool userStatsExist { get; set; }
+        public string RateOfFatLossMuscleGain { get; set; }
+        public double PoundsToLoseGainPerWeek { get; set; }
+        public int Bmr { get; set; }
+        public int Tdee { get; set; }
+        public int DailyCalories { get; set; }
+        public int ProteinGrams { get; set; }
+        public int CarbsGrams { get; set; }
+        public int FatGrams { get; set; }
+        public int PercentProtein { get; set; }
+        public int PercentCarbs { get; set; }
+        public int PercentFat { get; set; }
+        public bool UserStatsExist { get; set; }
     }
 }

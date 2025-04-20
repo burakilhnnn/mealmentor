@@ -10,7 +10,7 @@ namespace Domain.Models
         public Guid Id { get; set; }
         public Guid UserId { get; set; }
         public string Token { get; set; }
-        public bool openWelcome { get; set; }
+        public bool OpenWelcome { get; set; }
         public DateTime LastLogin { get; set; }
     }
 }

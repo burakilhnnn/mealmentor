@@ -9,12 +9,9 @@ namespace Domain.Models
     {
         public Guid Id { get; set; }
         public Guid UserId { get; set; }
-        public DateTime Date { get; set; }
+        public DateTime Date { get; set; } = DateTime.UtcNow;
         public string MealType { get; set; }
-        public string MealName { get; set; }
-        public string calories { get; set; }
-        public string protein { get; set; }
-        public string carbs { get; set; }
-        public string fats { get; set; }
+        public string NutritionId { get; set; }
+        public Meal Meal { get; set; }
     }
 }
