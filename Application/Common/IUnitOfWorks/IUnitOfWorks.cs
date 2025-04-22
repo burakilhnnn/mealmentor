@@ -9,6 +9,7 @@ namespace Application.Common.IUnitOfWorks
         IUserDetailRepository UserDetails { get; }
         IHistoryRepository Histories { get; }
         Task<int> SaveAsync();
+        
         ValueTask DisposeAsync();
 
 

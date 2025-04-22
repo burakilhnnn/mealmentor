@@ -25,5 +25,12 @@ namespace Zmealmentorai.Controller
             var result = await _mediator.Send(request);
             return Ok(result);
         }
+
+        [HttpDelete("histories")]
+        public async Task<IActionResult> DeleteHistory([FromBody] DeleteHistoryRequest request)
+        {
+            var result = await _mediator.Send(request);
+            return Ok(result);
+        }
     }
 }

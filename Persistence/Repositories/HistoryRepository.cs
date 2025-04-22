@@ -21,6 +21,15 @@ namespace Persistence.Repositories
         {
             await _context.Histories.AddAsync(history, cancellationToken);
         }
-        
+
+        public async Task Delete(History history)
+        {
+            _context.Histories.Remove(history);
+        }
+
+        public async Task<History> GetByIdAsync(Guid id, CancellationToken cancellationToken)
+        {
+            return await _context.Histories.FindAsync(id, cancellationToken);
+        }
     }
 }

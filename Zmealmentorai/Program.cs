@@ -6,6 +6,8 @@ using Persistence.Context;
 using Persistence.UnitOfWorks;
 using Application.Common.IUnitOfWorks;
 using Microsoft.EntityFrameworkCore;
+using Application.Services;
+using Persistence.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +23,12 @@ builder.Services.AddSwaggerGen(c =>
         Description = "MealMentor API Documentation"
     });
 });
+
+// Add HttpContextAccessor
+builder.Services.AddHttpContextAccessor();
+
+// Add CurrentUserService
+builder.Services.AddScoped<ICurrentUserService, CurrentUserService>();
 
 // Add DbContext
 builder.Services.AddDbContext<AppDbContext>(options =>

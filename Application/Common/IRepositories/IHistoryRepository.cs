@@ -9,5 +9,7 @@ namespace Application.Common.IRepositories
     public interface IHistoryRepository
     {
         Task AddAsync(History history, CancellationToken cancellationToken);
+        Task Delete(History history);
+        Task<History> GetByIdAsync(Guid id, CancellationToken cancellationToken);
     }
 }

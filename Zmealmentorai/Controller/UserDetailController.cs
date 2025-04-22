@@ -27,5 +27,12 @@ namespace Zmealmentorai.Controller
             var result = await _mediator.Send(request);
             return Ok(result);
         }
+
+        [HttpPut("userdetails")]
+        public async Task<IActionResult> UpdateUserDetail([FromBody] UpdateUserDetailRequest request)
+        {
+            var result = await _mediator.Send(request);
+            return Ok(result);
+        }
     }
 }

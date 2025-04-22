@@ -22,6 +22,12 @@ namespace Persistence.Repositories
         {
             await _dbContext.UserDetails.AddAsync(userDetail, cancellationToken);
         }
-        
+
+        public async Task<UserDetail> GetByIdAsync(Guid id, CancellationToken cancellationToken)
+        {
+            return await _dbContext.UserDetails.FindAsync(id, cancellationToken);
+        }
+
+
     }
 }
