@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Domain.Models;
 using Application.Common.IRepositories;
 using Persistence.Context;
+using Microsoft.EntityFrameworkCore;
 
 namespace Persistence.Repositories
 {
@@ -20,6 +21,7 @@ namespace Persistence.Repositories
         public async Task AddAsync(History history, CancellationToken cancellationToken)
         {
             await _context.Histories.AddAsync(history, cancellationToken);
+            await _context.SaveChangesAsync(cancellationToken);
         }
 
         public async Task Delete(History history)
@@ -30,6 +32,14 @@ namespace Persistence.Repositories
         public async Task<History> GetByIdAsync(Guid id, CancellationToken cancellationToken)
         {
             return await _context.Histories.FindAsync(id, cancellationToken);
+        }
+
+        public async Task<List<History>> GetByUserIdAsync(Guid userId, CancellationToken cancellationToken)
+        {
+            return await _context.Histories
+                .Where(h => h.UserId == userId)
+                .Include(h => h.Meal)
+                .ToListAsync(cancellationToken);
         }
     }
 }

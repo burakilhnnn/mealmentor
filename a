@@ -3,7 +3,7 @@ MealMentor Uygulaması Backend Gereksinimleri:
 Kullanıcı Yönetimi API Endpointleri:
 users - Kullanıcı kaydı ve girişi için
 
-√√√ POST: Yeni kullanıcı kaydı    
+√√√POST: Yeni kullanıcı kaydı    
 
 /sessions - Oturum yönetimi için
 
@@ -13,15 +13,15 @@ DELETE: Oturum sonlandırma
 Kullanıcı Detayları API Endpointleri:
 /userdetails - Kullanıcı profil bilgileri için
 
-GET: Kullanıcı detaylarını getirme
-√√√ POST: Yeni profil oluşturma
-PUT: Profil bilgilerini güncelleme
+√√√GET: Kullanıcı detaylarını getirme
+√√√POST: Yeni profil oluşturma
+√√√PUT: Profil bilgilerini güncelleme
 
 Geçmiş Kayıtlar API Endpointleri:
 /history - Öğün ve kilo geçmişi için
 
-GET: Tarih bazlı öğün geçmişini getirme
+√√√GET: Tarih bazlı öğün geçmişini getirme
 √√√ POST: Yeni öğün kaydı ekleme
-PUT: Geçmiş Öğün kaydını güncelleme
-DELETE:Geçmiş Öğün kaydını silme
+----PUT: Geçmiş Öğün kaydını güncelleme
+√√√DELETE:Geçmiş Öğün kaydını silme
 

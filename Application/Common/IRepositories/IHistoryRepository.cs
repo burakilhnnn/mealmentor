@@ -11,5 +11,6 @@ namespace Application.Common.IRepositories
         Task AddAsync(History history, CancellationToken cancellationToken);
         Task Delete(History history);
         Task<History> GetByIdAsync(Guid id, CancellationToken cancellationToken);
+        Task<List<History>> GetByUserIdAsync(Guid userId, CancellationToken cancellationToken);
     }
 }

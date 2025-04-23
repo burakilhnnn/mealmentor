@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "93m1voyfHB0=",
+  "dgSpecHash": "BH9X0l3/pM4=",
   "success": true,
   "projectFilePath": "/Users/burakilhan/Desktop/MealMentor/Persistence/Persistence.csproj",
   "expectedPackageFiles": [
+    "/Users/burakilhan/.nuget/packages/bcrypt.net-next/4.0.3/bcrypt.net-next.4.0.3.nupkg.sha512",
     "/Users/burakilhan/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/burakilhan/.nuget/packages/mediatr/12.2.0/mediatr.12.2.0.nupkg.sha512",
     "/Users/burakilhan/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
@@ -43,6 +44,10 @@
     "/Users/burakilhan/.nuget/packages/microsoft.extensions.objectpool/8.0.11/microsoft.extensions.objectpool.8.0.11.nupkg.sha512",
     "/Users/burakilhan/.nuget/packages/microsoft.extensions.options/9.0.4/microsoft.extensions.options.9.0.4.nupkg.sha512",
     "/Users/burakilhan/.nuget/packages/microsoft.extensions.primitives/9.0.4/microsoft.extensions.primitives.9.0.4.nupkg.sha512",
+    "/Users/burakilhan/.nuget/packages/microsoft.identitymodel.abstractions/8.8.0/microsoft.identitymodel.abstractions.8.8.0.nupkg.sha512",
+    "/Users/burakilhan/.nuget/packages/microsoft.identitymodel.jsonwebtokens/8.8.0/microsoft.identitymodel.jsonwebtokens.8.8.0.nupkg.sha512",
+    "/Users/burakilhan/.nuget/packages/microsoft.identitymodel.logging/8.8.0/microsoft.identitymodel.logging.8.8.0.nupkg.sha512",
+    "/Users/burakilhan/.nuget/packages/microsoft.identitymodel.tokens/8.8.0/microsoft.identitymodel.tokens.8.8.0.nupkg.sha512",
     "/Users/burakilhan/.nuget/packages/microsoft.net.http.headers/2.3.0/microsoft.net.http.headers.2.3.0.nupkg.sha512",
     "/Users/burakilhan/.nuget/packages/mono.texttemplating/3.0.0/mono.texttemplating.3.0.0.nupkg.sha512",
     "/Users/burakilhan/.nuget/packages/npgsql/9.0.3/npgsql.9.0.3.nupkg.sha512",
@@ -54,6 +59,7 @@
     "/Users/burakilhan/.nuget/packages/system.composition.hosting/7.0.0/system.composition.hosting.7.0.0.nupkg.sha512",
     "/Users/burakilhan/.nuget/packages/system.composition.runtime/7.0.0/system.composition.runtime.7.0.0.nupkg.sha512",
     "/Users/burakilhan/.nuget/packages/system.composition.typedparts/7.0.0/system.composition.typedparts.7.0.0.nupkg.sha512",
+    "/Users/burakilhan/.nuget/packages/system.identitymodel.tokens.jwt/8.8.0/system.identitymodel.tokens.jwt.8.8.0.nupkg.sha512",
     "/Users/burakilhan/.nuget/packages/system.text.json/9.0.4/system.text.json.9.0.4.nupkg.sha512",
     "/Users/burakilhan/.nuget/packages/microsoft.netcore.app.ref/9.0.3/microsoft.netcore.app.ref.9.0.3.nupkg.sha512",
     "/Users/burakilhan/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.3/microsoft.aspnetcore.app.ref.9.0.3.nupkg.sha512"

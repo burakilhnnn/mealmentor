@@ -12,6 +12,6 @@ namespace Application.Common.IRepositories
     {
         Task AddAsync(UserDetail userDetail, CancellationToken cancellationToken);
         Task<UserDetail> GetByIdAsync(Guid id, CancellationToken cancellationToken);
-
+        Task<List<UserDetail>> GetUserDetails(CancellationToken cancellationToken);
     }
 }

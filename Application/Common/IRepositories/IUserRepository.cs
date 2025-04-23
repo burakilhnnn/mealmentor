@@ -10,6 +10,9 @@ namespace Application.Common.IRepositories
     public interface IUserRepository
     {
         Task AddAsync(User user, CancellationToken cancellationToken);
-
+        Task<User> GetByEmailAsync(string email, CancellationToken cancellationToken);
+        Task UpdateAsync(User user, CancellationToken cancellationToken);   
+        Task<User> GetByIdAsync(Guid id, CancellationToken cancellationToken);
+        
     }
 }

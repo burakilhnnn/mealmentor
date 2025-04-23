@@ -237,3 +237,12 @@
 /Users/burakilhan/Desktop/MealMentor/Zmealmentorai/obj/Debug/net9.0/mealmentorai.pdb
 /Users/burakilhan/Desktop/MealMentor/Zmealmentorai/obj/Debug/net9.0/mealmentorai.genruntimeconfig.cache
 /Users/burakilhan/Desktop/MealMentor/Zmealmentorai/obj/Debug/net9.0/ref/mealmentorai.dll
+/Users/burakilhan/Desktop/MealMentor/Zmealmentorai/bin/Debug/net9.0/BCrypt.Net-Next.dll
+/Users/burakilhan/Desktop/MealMentor/Zmealmentorai/bin/Debug/net9.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/burakilhan/Desktop/MealMentor/Zmealmentorai/bin/Debug/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/burakilhan/Desktop/MealMentor/Zmealmentorai/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
+/Users/burakilhan/Desktop/MealMentor/Zmealmentorai/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
+/Users/burakilhan/Desktop/MealMentor/Zmealmentorai/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/burakilhan/Desktop/MealMentor/Zmealmentorai/bin/Debug/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/burakilhan/Desktop/MealMentor/Zmealmentorai/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.dll
+/Users/burakilhan/Desktop/MealMentor/Zmealmentorai/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

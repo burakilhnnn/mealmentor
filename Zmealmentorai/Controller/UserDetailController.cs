@@ -34,5 +34,12 @@ namespace Zmealmentorai.Controller
             var result = await _mediator.Send(request);
             return Ok(result);
         }
+
+        [HttpGet("userdetails")]
+        public async Task<IActionResult> GetUserDetails()
+        {
+            var result = await _mediator.Send(new GetUserDetailsRequest());
+            return Ok(result);
+        }
     }
 }
