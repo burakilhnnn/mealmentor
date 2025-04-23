@@ -28,8 +28,8 @@
 /Users/burakilhan/Desktop/MealMentor/Domain/obj/Debug/net9.0/Domain.AssemblyInfoInputs.cache
 /Users/burakilhan/Desktop/MealMentor/Domain/obj/Debug/net9.0/Domain.AssemblyInfo.cs
 /Users/burakilhan/Desktop/MealMentor/Domain/obj/Debug/net9.0/Domain.csproj.CoreCompileInputs.cache
+/Users/burakilhan/Desktop/MealMentor/Domain/obj/Debug/net9.0/Domain.sourcelink.json
 /Users/burakilhan/Desktop/MealMentor/Domain/obj/Debug/net9.0/Domain.dll
 /Users/burakilhan/Desktop/MealMentor/Domain/obj/Debug/net9.0/refint/Domain.dll
 /Users/burakilhan/Desktop/MealMentor/Domain/obj/Debug/net9.0/Domain.pdb
 /Users/burakilhan/Desktop/MealMentor/Domain/obj/Debug/net9.0/ref/Domain.dll
-/Users/burakilhan/Desktop/MealMentor/Domain/obj/Debug/net9.0/Domain.sourcelink.json

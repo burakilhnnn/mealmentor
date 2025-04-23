@@ -7,8 +7,8 @@ users - Kullanıcı kaydı ve girişi için
 
 /sessions - Oturum yönetimi için
 
-POST: Yeni oturum oluşturma
-DELETE: Oturum sonlandırma
+√√√POST: Yeni oturum oluşturma
+√√√DELETE: Oturum sonlandırma
 
 Kullanıcı Detayları API Endpointleri:
 /userdetails - Kullanıcı profil bilgileri için

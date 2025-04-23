@@ -39,9 +39,9 @@
 /Users/burakilhan/Desktop/MealMentor/Application/obj/Debug/net9.0/Application.AssemblyInfoInputs.cache
 /Users/burakilhan/Desktop/MealMentor/Application/obj/Debug/net9.0/Application.AssemblyInfo.cs
 /Users/burakilhan/Desktop/MealMentor/Application/obj/Debug/net9.0/Application.csproj.CoreCompileInputs.cache
+/Users/burakilhan/Desktop/MealMentor/Application/obj/Debug/net9.0/Application.sourcelink.json
 /Users/burakilhan/Desktop/MealMentor/Application/obj/Debug/net9.0/Applicat.44B5EDA2.Up2Date
 /Users/burakilhan/Desktop/MealMentor/Application/obj/Debug/net9.0/Application.dll
 /Users/burakilhan/Desktop/MealMentor/Application/obj/Debug/net9.0/refint/Application.dll
 /Users/burakilhan/Desktop/MealMentor/Application/obj/Debug/net9.0/Application.pdb
 /Users/burakilhan/Desktop/MealMentor/Application/obj/Debug/net9.0/ref/Application.dll
-/Users/burakilhan/Desktop/MealMentor/Application/obj/Debug/net9.0/Application.sourcelink.json
