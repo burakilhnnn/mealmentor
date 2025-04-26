@@ -26,5 +26,12 @@ namespace mealmentorai.Controller
             var foods = await _mediator.Send(request);
             return Ok(foods);
         }
+
+        [HttpGet("get-food")]
+        public async Task<IActionResult> GetFood([FromQuery] GetFoodRequest request)
+        {
+            var food = await _mediator.Send(request);
+            return Ok(food);
+        }
     }
 }
