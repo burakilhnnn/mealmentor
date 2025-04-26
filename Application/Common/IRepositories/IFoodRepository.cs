@@ -8,6 +8,6 @@ namespace Application.Common.IRepositories
     public interface IFoodRepository
     {
         Task AddAsync(Food food, CancellationToken cancellationToken);
-        Task<Food> GetByNameAsync(string mealName, CancellationToken cancellationToken);
+        Task<IEnumerable<Food>> GetByNameAsync(string mealName, CancellationToken cancellationToken);
     }
 }

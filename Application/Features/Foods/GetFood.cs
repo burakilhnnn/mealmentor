@@ -20,15 +20,28 @@ namespace Application.Features.Foods
 
             public async Task<GetFoodResponse> Handle(GetFoodRequest request, CancellationToken cancellationToken)
             {
-                var food = await _unitOfWorks.Foods.GetByNameAsync(request.MealName, cancellationToken);
+                if (string.IsNullOrWhiteSpace(request.MealName))
+                {
+                    return new GetFoodResponse { Foods = new List<FoodDto>() };
+                }
+
+                var foods = await _unitOfWorks.Foods.GetByNameAsync(request.MealName, cancellationToken);
+                if (foods == null || !foods.Any())
+                {
+                    return new GetFoodResponse { Foods = new List<FoodDto>() };
+                }
+
                 return new GetFoodResponse
                 {
-                    NutritionId = food.NutritionId,
-                    MealName = food.MealName,
-                    Calories = food.Calories,
-                    Protein = food.Protein,
-                    Carbs = food.Carbs,
-                    Fats = food.Fats
+                    Foods = foods.Select(f => new FoodDto
+                    {
+                        NutritionId = f.NutritionId,
+                        MealName = f.MealName,
+                        Calories = f.Calories,
+                        Protein = f.Protein,
+                        Carbs = f.Carbs,
+                        Fats = f.Fats
+                    }).ToList()
                 };
             }
         }
@@ -36,16 +49,11 @@ namespace Application.Features.Foods
 
     public class GetFoodRequest : IRequest<GetFoodResponse>
     {
-        public string MealName { get; set; }
+        public string? MealName { get; set; }
     }
 
     public class GetFoodResponse
     {
-        public int NutritionId { get; set; }
-        public string MealName { get; set; }
-        public int Calories { get; set; }
-        public double Protein { get; set; }
-        public double Carbs { get; set; }
-        public double Fats { get; set; }
+        public List<FoodDto> Foods { get; set; }
     }
 }

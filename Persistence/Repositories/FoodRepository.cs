@@ -22,11 +22,12 @@ namespace Persistence.Repositories
             await _context.Foods.AddAsync(food, cancellationToken);
         }
 
-        public async Task<Food> GetByNameAsync(string mealName, CancellationToken cancellationToken)
+        public async Task<IEnumerable<Food>> GetByNameAsync(string mealName, CancellationToken cancellationToken)
         {
             return await _context.Foods
                 .Where(f => f.MealName.ToLower().Contains(mealName.ToLower()))
-                .FirstOrDefaultAsync(cancellationToken);
+                .Take(10)
+                .ToListAsync(cancellationToken);
         }
     }
 }
