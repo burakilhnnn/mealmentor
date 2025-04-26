@@ -21,6 +21,7 @@ namespace Persistence.Context
         public DbSet<History> Histories { get; set; }
         public DbSet<MealPlan> MealPlans { get; set; }
         public DbSet<Meal> Meals { get; set; }
+        public DbSet<Food> Foods { get; set; }
 
 
 

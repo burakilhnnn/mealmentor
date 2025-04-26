@@ -8,7 +8,7 @@ namespace Domain.Models
     public class UserDetail
     {
 
-        public UserDetail(string sex, int age, int height, int weight, string activityLevel, string goal, string rateOfFatLossMuscleGain)
+        public UserDetail(string sex, int age, int height, int weight, string activityLevel, string goal, string rateOfFatLossMuscleGain, double kgToLoseGainPerWeek, int bmr, int tdee, int dailyCalories, int proteinGrams, int carbsGrams, int fatGrams, int percentProtein, int percentCarbs, int percentFat)
         {
             Sex = sex;
             Age = age;
@@ -17,6 +17,16 @@ namespace Domain.Models
             ActivityLevel = activityLevel;
             Goal = goal;
             RateOfFatLossMuscleGain = rateOfFatLossMuscleGain;
+            KgToLoseGainPerWeek = kgToLoseGainPerWeek;
+            Bmr = bmr;
+            Tdee = tdee;
+            DailyCalories = dailyCalories;
+            ProteinGrams = proteinGrams;
+            CarbsGrams = carbsGrams;
+            FatGrams = fatGrams;
+            PercentProtein = percentProtein;
+            PercentCarbs = percentCarbs;
+            PercentFat = percentFat;
         }
 
         public Guid UserId { get; set; }
@@ -27,7 +37,7 @@ namespace Domain.Models
         public string ActivityLevel { get; set; }
         public string Goal { get; set; }
         public string RateOfFatLossMuscleGain { get; set; }
-        public double PoundsToLoseGainPerWeek { get; set; }
+        public double KgToLoseGainPerWeek { get; set; }
         public int Bmr { get; set; }
         public int Tdee { get; set; }
         public int DailyCalories { get; set; }

@@ -22,6 +22,35 @@ namespace Persistence.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("Domain.Models.Food", b =>
+                {
+                    b.Property<int>("NutritionId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("NutritionId"));
+
+                    b.Property<int>("Calories")
+                        .HasColumnType("integer");
+
+                    b.Property<double>("Carbs")
+                        .HasColumnType("double precision");
+
+                    b.Property<double>("Fats")
+                        .HasColumnType("double precision");
+
+                    b.Property<string>("MealName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<double>("Protein")
+                        .HasColumnType("double precision");
+
+                    b.HasKey("NutritionId");
+
+                    b.ToTable("Foods", (string)null);
+                });
+
             modelBuilder.Entity("Domain.Models.History", b =>
                 {
                     b.Property<Guid>("Id")
@@ -234,6 +263,9 @@ namespace Persistence.Migrations
                     b.Property<int>("Height")
                         .HasColumnType("integer");
 
+                    b.Property<double>("KgToLoseGainPerWeek")
+                        .HasColumnType("double precision");
+
                     b.Property<int>("PercentCarbs")
                         .HasColumnType("integer");
 
@@ -242,9 +274,6 @@ namespace Persistence.Migrations
 
                     b.Property<int>("PercentProtein")
                         .HasColumnType("integer");
-
-                    b.Property<double>("PoundsToLoseGainPerWeek")
-                        .HasColumnType("double precision");
 
                     b.Property<int>("ProteinGrams")
                         .HasColumnType("integer");

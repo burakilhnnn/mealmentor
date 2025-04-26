@@ -37,7 +37,7 @@ namespace Application.Features.UserDetails
                     ActivityLevel = userDetail.ActivityLevel,
                     Goal = userDetail.Goal,
                     RateOfFatLossMuscleGain = userDetail.RateOfFatLossMuscleGain,
-                    PoundsToLoseGainPerWeek = userDetail.PoundsToLoseGainPerWeek,
+                    KgToLoseGainPerWeek = userDetail.KgToLoseGainPerWeek,
                     Bmr = userDetail.Bmr,
                     Tdee = userDetail.Tdee,
                     DailyCalories = userDetail.DailyCalories,
@@ -62,7 +62,7 @@ namespace Application.Features.UserDetails
         public string ActivityLevel { get; set; }
         public string Goal { get; set; }
         public string RateOfFatLossMuscleGain { get; set; }
-        public double PoundsToLoseGainPerWeek { get; set; }
+        public double KgToLoseGainPerWeek { get; set; }
         public int Bmr { get; set; }
         public int Tdee { get; set; }
         public int DailyCalories { get; set; }

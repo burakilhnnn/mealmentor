@@ -25,7 +25,7 @@ namespace Application.Features.UserDetails
         public async Task<UserDetail> Handle(UpdateUserDetailRequest request, CancellationToken cancellationToken)
         {
             var userId = _currentUserService.UserId;
-            
+
             var userDetail = await _unitOfWorks.UserDetails.GetByIdAsync(userId, cancellationToken);
 
             userDetail.Sex = request.Sex;
@@ -34,7 +34,17 @@ namespace Application.Features.UserDetails
             userDetail.Weight = request.Weight;
             userDetail.ActivityLevel = request.ActivityLevel;
             userDetail.Goal = request.Goal;
-            userDetail.RateOfFatLossMuscleGain = request.rateOfFatLossMuscleGain;
+            userDetail.RateOfFatLossMuscleGain = request.RateOfFatLossMuscleGain;
+            userDetail.KgToLoseGainPerWeek = request.KgToLoseGainPerWeek;
+            userDetail.Bmr = request.Bmr;
+            userDetail.Tdee = request.Tdee;
+            userDetail.DailyCalories = request.DailyCalories;
+            userDetail.ProteinGrams = request.ProteinGrams;
+            userDetail.CarbsGrams = request.CarbsGrams;
+            userDetail.FatGrams = request.FatGrams;
+            userDetail.PercentProtein = request.PercentProtein;
+            userDetail.PercentCarbs = request.PercentCarbs;
+            userDetail.PercentFat = request.PercentFat;
 
             await _unitOfWorks.SaveAsync();
 
@@ -50,6 +60,17 @@ namespace Application.Features.UserDetails
         public int Weight { get; set; }
         public string ActivityLevel { get; set; }
         public string Goal { get; set; }
-        public string rateOfFatLossMuscleGain { get; set; }
+        public string RateOfFatLossMuscleGain { get; set; }
+        public double KgToLoseGainPerWeek { get; set; }
+        public int Bmr { get; set; }
+        public int Tdee { get; set; }
+        public int DailyCalories { get; set; }
+        public int ProteinGrams { get; set; }
+        public int CarbsGrams { get; set; }
+        public int FatGrams { get; set; }
+        public int PercentProtein { get; set; }
+        public int PercentCarbs { get; set; }
+        public int PercentFat { get; set; }
+
     }
 }

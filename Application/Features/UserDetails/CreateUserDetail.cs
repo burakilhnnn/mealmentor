@@ -22,7 +22,7 @@ namespace Application.Features.UserDetails
 
         public async Task<UserDetail> Handle(CreateUserDetailRequest request, CancellationToken cancellationToken)
         {
-            var userDetail = new UserDetail(request.Sex, request.Age, request.Height, request.Weight, request.ActivityLevel, request.Goal, request.rateOfFatLossMuscleGain);
+            var userDetail = new UserDetail(request.Sex, request.Age, request.Height, request.Weight, request.ActivityLevel, request.Goal, request.RateOfFatLossMuscleGain, request.KgToLoseGainPerWeek, request.Bmr, request.Tdee, request.DailyCalories, request.ProteinGrams, request.CarbsGrams, request.FatGrams, request.PercentProtein, request.PercentCarbs, request.PercentFat);
             userDetail.UserId = _currentUserService.UserId;
             await _unitOfWorks.UserDetails.AddAsync(userDetail, cancellationToken);
             await _unitOfWorks.SaveAsync();
@@ -39,7 +39,17 @@ namespace Application.Features.UserDetails
         public int Weight { get; set; }
         public string ActivityLevel { get; set; }
         public string Goal { get; set; }
-        public string rateOfFatLossMuscleGain { get; set; }
+        public string RateOfFatLossMuscleGain { get; set; }
+        public double KgToLoseGainPerWeek { get; set; }
+        public int Bmr { get; set; }
+        public int Tdee { get; set; }
+        public int DailyCalories { get; set; }
+        public int ProteinGrams { get; set; }
+        public int CarbsGrams { get; set; }
+        public int FatGrams { get; set; }
+        public int PercentProtein { get; set; }
+        public int PercentCarbs { get; set; }
+        public int PercentFat { get; set; }
 
 
     }

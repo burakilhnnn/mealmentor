@@ -8,6 +8,7 @@ namespace Application.Common.IUnitOfWorks
         IUserRepository Users { get; }
         IUserDetailRepository UserDetails { get; }
         IHistoryRepository Histories { get; }
+        IFoodRepository Foods { get; }
         Task<int> SaveAsync();
         
         ValueTask DisposeAsync();

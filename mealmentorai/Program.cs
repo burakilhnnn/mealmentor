@@ -135,6 +135,8 @@ if (app.Environment.IsDevelopment())
     });
 }
 
+
+
 app.UseRouting();
 
 // Add Authentication & Authorization middleware

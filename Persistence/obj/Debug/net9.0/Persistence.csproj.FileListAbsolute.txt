@@ -35,6 +35,12 @@
 /Users/burakilhan/Desktop/mealmentor-main/Persistence/obj/Debug/net9.0/Persistence.pdb
 /Users/burakilhan/Desktop/mealmentor-main/Persistence/obj/Debug/net9.0/Persistence.genruntimeconfig.cache
 /Users/burakilhan/Desktop/mealmentor-main/Persistence/obj/Debug/net9.0/ref/Persistence.dll
+/Users/burakilhan/Desktop/MealMentor/Persistence/obj/Debug/net9.0/Persistence.csproj.AssemblyReference.cache
+/Users/burakilhan/Desktop/MealMentor/Persistence/obj/Debug/net9.0/Persistence.GeneratedMSBuildEditorConfig.editorconfig
+/Users/burakilhan/Desktop/MealMentor/Persistence/obj/Debug/net9.0/Persistence.AssemblyInfoInputs.cache
+/Users/burakilhan/Desktop/MealMentor/Persistence/obj/Debug/net9.0/Persistence.AssemblyInfo.cs
+/Users/burakilhan/Desktop/MealMentor/Persistence/obj/Debug/net9.0/Persistence.csproj.CoreCompileInputs.cache
+/Users/burakilhan/Desktop/MealMentor/Persistence/obj/Debug/net9.0/Persistence.sourcelink.json
 /Users/burakilhan/Desktop/MealMentor/Persistence/bin/Debug/net9.0/Persistence.deps.json
 /Users/burakilhan/Desktop/MealMentor/Persistence/bin/Debug/net9.0/Persistence.runtimeconfig.json
 /Users/burakilhan/Desktop/MealMentor/Persistence/bin/Debug/net9.0/Persistence.dll
@@ -43,12 +49,6 @@
 /Users/burakilhan/Desktop/MealMentor/Persistence/bin/Debug/net9.0/Domain.dll
 /Users/burakilhan/Desktop/MealMentor/Persistence/bin/Debug/net9.0/Domain.pdb
 /Users/burakilhan/Desktop/MealMentor/Persistence/bin/Debug/net9.0/Application.pdb
-/Users/burakilhan/Desktop/MealMentor/Persistence/obj/Debug/net9.0/Persistence.csproj.AssemblyReference.cache
-/Users/burakilhan/Desktop/MealMentor/Persistence/obj/Debug/net9.0/Persistence.GeneratedMSBuildEditorConfig.editorconfig
-/Users/burakilhan/Desktop/MealMentor/Persistence/obj/Debug/net9.0/Persistence.AssemblyInfoInputs.cache
-/Users/burakilhan/Desktop/MealMentor/Persistence/obj/Debug/net9.0/Persistence.AssemblyInfo.cs
-/Users/burakilhan/Desktop/MealMentor/Persistence/obj/Debug/net9.0/Persistence.csproj.CoreCompileInputs.cache
-/Users/burakilhan/Desktop/MealMentor/Persistence/obj/Debug/net9.0/Persistence.sourcelink.json
 /Users/burakilhan/Desktop/MealMentor/Persistence/obj/Debug/net9.0/Persiste.61C28332.Up2Date
 /Users/burakilhan/Desktop/MealMentor/Persistence/obj/Debug/net9.0/Persistence.dll
 /Users/burakilhan/Desktop/MealMentor/Persistence/obj/Debug/net9.0/refint/Persistence.dll

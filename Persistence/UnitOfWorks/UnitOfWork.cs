@@ -15,6 +15,7 @@ namespace Persistence.UnitOfWorks
         private IUserRepository _users;
         private IUserDetailRepository _userDetails;
         private IHistoryRepository _histories;
+        private IFoodRepository _foods;
 
         public UnitOfWork(AppDbContext context)
         {
@@ -56,6 +57,14 @@ namespace Persistence.UnitOfWorks
                 return new HistoryRepository(_context);
             }
 
+        }
+
+        public IFoodRepository Foods
+        {
+            get
+            {
+                return new FoodRepository(_context);
+            }
         }
     }
 }
