@@ -27,6 +27,18 @@ using Domain.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Add CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        builder =>
+        {
+            builder.AllowAnyOrigin()
+                   .AllowAnyMethod()
+                   .AllowAnyHeader();
+        });
+});
+
 // Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -135,7 +147,8 @@ if (app.Environment.IsDevelopment())
     });
 }
 
-
+// Use CORS
+app.UseCors("AllowAll");
 
 app.UseRouting();
 
