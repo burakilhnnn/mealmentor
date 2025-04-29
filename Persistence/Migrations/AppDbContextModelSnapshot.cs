@@ -129,6 +129,10 @@ namespace Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<string>("DietaryRecommendation")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.Property<string>("DietaryRestrictions")
                         .IsRequired()
                         .HasColumnType("text");

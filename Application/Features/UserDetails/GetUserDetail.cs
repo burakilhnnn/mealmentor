@@ -51,7 +51,8 @@ namespace Application.Features.UserDetails
                     Severity = userDetail.Severity,
                     Bmi = userDetail.Bmi,
                     DietaryRestrictions = userDetail.DietaryRestrictions,
-                    Allergies = userDetail.Allergies
+                    Allergies = userDetail.Allergies,
+                    DietaryRecommendation = userDetail.DietaryRecommendation
                 };
             }
         }
@@ -82,6 +83,7 @@ namespace Application.Features.UserDetails
         public string Bmi { get; set; }
         public string DietaryRestrictions { get; set; }
         public string Allergies { get; set; }
+        public string DietaryRecommendation { get; set; }
     }
 
     public class GetUserDetailsRequest : IRequest<GetUserDetailsResponse>

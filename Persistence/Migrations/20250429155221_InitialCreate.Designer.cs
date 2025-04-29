@@ -12,7 +12,7 @@ using Persistence.Context;
 namespace Persistence.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250428210513_InitialCreate")]
+    [Migration("20250429155221_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -129,6 +129,10 @@ namespace Persistence.Migrations
                         .HasColumnType("integer");
 
                     b.Property<string>("DieseaseType")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("DietaryRecommendation")
                         .IsRequired()
                         .HasColumnType("text");
 

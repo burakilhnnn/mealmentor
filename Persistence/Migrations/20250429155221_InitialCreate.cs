@@ -70,6 +70,7 @@ namespace Persistence.Migrations
                     Severity = table.Column<string>(type: "text", nullable: false),
                     Bmi = table.Column<string>(type: "text", nullable: false),
                     DietaryRestrictions = table.Column<string>(type: "text", nullable: false),
+                    DietaryRecommendation = table.Column<string>(type: "text", nullable: false),
                     Allergies = table.Column<string>(type: "text", nullable: false)
                 },
                 constraints: table =>

@@ -50,7 +50,7 @@ namespace Application.Features.UserDetails
             userDetail.Bmi = request.Bmi;
             userDetail.DietaryRestrictions = request.DietaryRestrictions;
             userDetail.Allergies = request.Allergies;
-
+            userDetail.DietaryRecommendation = request.DietaryRecommendation;
             await _unitOfWorks.SaveAsync();
 
             return userDetail;
@@ -81,6 +81,7 @@ namespace Application.Features.UserDetails
         public string Bmi { get; set; }
         public string DietaryRestrictions { get; set; }
         public string Allergies { get; set; }
+        public string DietaryRecommendation { get; set; }
 
     }
 }
