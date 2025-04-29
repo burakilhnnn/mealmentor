@@ -36,6 +36,7 @@ namespace Application.Features.Histories
                         Date = h.Date,
                         MealType = h.MealType,
                         NutritionId = h.NutritionId,
+                        Meal = h.Meal
                     }).ToList()
                 };
             }
@@ -54,6 +55,7 @@ namespace Application.Features.Histories
         public DateTime Date { get; set; }
         public string MealType { get; set; }
         public string NutritionId { get; set; }
+        public Meal Meal { get; set; }
     }
 
     public class GetHistoryRequest : IRequest<GetHistoryResponse>

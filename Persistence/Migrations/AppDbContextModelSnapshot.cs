@@ -60,6 +60,9 @@ namespace Persistence.Migrations
                     b.Property<DateTime>("Date")
                         .HasColumnType("timestamp with time zone");
 
+                    b.Property<string>("MealId")
+                        .HasColumnType("text");
+
                     b.Property<string>("MealType")
                         .IsRequired()
                         .HasColumnType("text");
@@ -73,7 +76,35 @@ namespace Persistence.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("MealId");
+
                     b.ToTable("Histories", (string)null);
+                });
+
+            modelBuilder.Entity("Domain.Models.Meal", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("text");
+
+                    b.Property<int>("Calories")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("Carbs")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("Fats")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("MealName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("Protein")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Meals");
                 });
 
             modelBuilder.Entity("Domain.Models.User", b =>
@@ -183,6 +214,15 @@ namespace Persistence.Migrations
                     b.HasKey("UserId");
 
                     b.ToTable("UserDetails", (string)null);
+                });
+
+            modelBuilder.Entity("Domain.Models.History", b =>
+                {
+                    b.HasOne("Domain.Models.Meal", "Meal")
+                        .WithMany()
+                        .HasForeignKey("MealId");
+
+                    b.Navigation("Meal");
                 });
 #pragma warning restore 612, 618
         }

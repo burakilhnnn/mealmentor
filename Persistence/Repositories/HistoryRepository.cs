@@ -38,6 +38,7 @@ namespace Persistence.Repositories
         {
             return await _context.Histories
                 .Where(h => h.UserId == userId)
+                .Include(h => h.Meal)
                 .ToListAsync(cancellationToken);
         }
     }

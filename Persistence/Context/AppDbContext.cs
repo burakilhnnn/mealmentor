@@ -17,6 +17,7 @@ namespace Persistence.Context
         }
         public DbSet<User> Users { get; set; }
         public DbSet<UserDetail> UserDetails { get; set; }
+        public DbSet<Meal> Meals { get; set; }
         public DbSet<History> Histories { get; set; }
         public DbSet<Food> Foods { get; set; }
 
