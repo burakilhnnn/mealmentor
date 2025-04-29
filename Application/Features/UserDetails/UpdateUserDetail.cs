@@ -45,6 +45,11 @@ namespace Application.Features.UserDetails
             userDetail.PercentProtein = request.PercentProtein;
             userDetail.PercentCarbs = request.PercentCarbs;
             userDetail.PercentFat = request.PercentFat;
+            userDetail.DieseaseType = request.DieseaseType;
+            userDetail.Severity = request.Severity;
+            userDetail.Bmi = request.Bmi;
+            userDetail.DietaryRestrictions = request.DietaryRestrictions;
+            userDetail.Allergies = request.Allergies;
 
             await _unitOfWorks.SaveAsync();
 
@@ -71,6 +76,11 @@ namespace Application.Features.UserDetails
         public int PercentProtein { get; set; }
         public int PercentCarbs { get; set; }
         public int PercentFat { get; set; }
+        public string DieseaseType { get; set; }
+        public string Severity { get; set; }
+        public string Bmi { get; set; }
+        public string DietaryRestrictions { get; set; }
+        public string Allergies { get; set; }
 
     }
 }

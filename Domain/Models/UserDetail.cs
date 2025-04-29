@@ -8,7 +8,7 @@ namespace Domain.Models
     public class UserDetail
     {
 
-        public UserDetail(string sex, int age, int height, int weight, string activityLevel, string goal, string rateOfFatLossMuscleGain, double kgToLoseGainPerWeek, int bmr, int tdee, int dailyCalories, int proteinGrams, int carbsGrams, int fatGrams, int percentProtein, int percentCarbs, int percentFat)
+        public UserDetail(string sex, int age, int height, int weight, string activityLevel, string goal, string rateOfFatLossMuscleGain, double kgToLoseGainPerWeek, int bmr, int tdee, int dailyCalories, int proteinGrams, int carbsGrams, int fatGrams, int percentProtein, int percentCarbs, int percentFat, string dieseaseType, string severity, string bmi, string dietaryRestrictions, string allergies)
         {
             Sex = sex;
             Age = age;
@@ -27,6 +27,11 @@ namespace Domain.Models
             PercentProtein = percentProtein;
             PercentCarbs = percentCarbs;
             PercentFat = percentFat;
+            DieseaseType = dieseaseType;
+            Severity = severity;
+            Bmi = bmi;
+            DietaryRestrictions = dietaryRestrictions;
+            Allergies = allergies;
         }
 
         public Guid UserId { get; set; }
@@ -47,6 +52,11 @@ namespace Domain.Models
         public int PercentProtein { get; set; }
         public int PercentCarbs { get; set; }
         public int PercentFat { get; set; }
-        public bool UserStatsExist { get; set; }
+        public string DieseaseType { get; set; }
+        public string Severity { get; set; }
+        public string Bmi { get; set; }
+        public string DietaryRestrictions { get; set; }
+        public string Allergies { get; set; }
+
     }
 }

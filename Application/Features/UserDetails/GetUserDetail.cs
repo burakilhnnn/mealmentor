@@ -46,7 +46,12 @@ namespace Application.Features.UserDetails
                     FatGrams = userDetail.FatGrams,
                     PercentProtein = userDetail.PercentProtein,
                     PercentCarbs = userDetail.PercentCarbs,
-                    PercentFat = userDetail.PercentFat
+                    PercentFat = userDetail.PercentFat,
+                    DieseaseType = userDetail.DieseaseType,
+                    Severity = userDetail.Severity,
+                    Bmi = userDetail.Bmi,
+                    DietaryRestrictions = userDetail.DietaryRestrictions,
+                    Allergies = userDetail.Allergies
                 };
             }
         }
@@ -72,6 +77,11 @@ namespace Application.Features.UserDetails
         public int PercentProtein { get; set; }
         public int PercentCarbs { get; set; }
         public int PercentFat { get; set; }
+        public string DieseaseType { get; set; }
+        public string Severity { get; set; }
+        public string Bmi { get; set; }
+        public string DietaryRestrictions { get; set; }
+        public string Allergies { get; set; }
     }
 
     public class GetUserDetailsRequest : IRequest<GetUserDetailsResponse>

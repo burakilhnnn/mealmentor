@@ -22,7 +22,7 @@ namespace Application.Features.UserDetails
 
         public async Task<UserDetail> Handle(CreateUserDetailRequest request, CancellationToken cancellationToken)
         {
-            var userDetail = new UserDetail(request.Sex, request.Age, request.Height, request.Weight, request.ActivityLevel, request.Goal, request.RateOfFatLossMuscleGain, request.KgToLoseGainPerWeek, request.Bmr, request.Tdee, request.DailyCalories, request.ProteinGrams, request.CarbsGrams, request.FatGrams, request.PercentProtein, request.PercentCarbs, request.PercentFat);
+            var userDetail = new UserDetail(request.Sex, request.Age, request.Height, request.Weight, request.ActivityLevel, request.Goal, request.RateOfFatLossMuscleGain, request.KgToLoseGainPerWeek, request.Bmr, request.Tdee, request.DailyCalories, request.ProteinGrams, request.CarbsGrams, request.FatGrams, request.PercentProtein, request.PercentCarbs, request.PercentFat, request.DieseaseType, request.Severity, request.Bmi, request.DietaryRestrictions, request.Allergies);
             userDetail.UserId = _currentUserService.UserId;
             await _unitOfWorks.UserDetails.AddAsync(userDetail, cancellationToken);
             await _unitOfWorks.SaveAsync();
@@ -50,6 +50,11 @@ namespace Application.Features.UserDetails
         public int PercentProtein { get; set; }
         public int PercentCarbs { get; set; }
         public int PercentFat { get; set; }
+        public string DieseaseType { get; set; }
+        public string Severity { get; set; }
+        public string Bmi { get; set; }
+        public string DietaryRestrictions { get; set; }
+        public string Allergies { get; set; }
 
 
     }

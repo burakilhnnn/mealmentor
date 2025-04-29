@@ -29,15 +29,7 @@ namespace Application.Features.Histories
                 UserId = userId,
                 MealType = request.MealType,
                 NutritionId = Guid.NewGuid().ToString(),
-                Meal = new Meal
-                {
-                    Id = Guid.NewGuid().ToString(),
-                    MealName = request.MealName,
-                    Calories = request.Calories,
-                    Protein = request.Protein,
-                    Carbs = request.Carbs,
-                    Fats = request.Fats
-                }
+        
             };
 
             await _unitOfWorks.Histories.AddAsync(history, cancellationToken);

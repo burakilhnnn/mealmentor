@@ -12,6 +12,5 @@ namespace Domain.Models
         public DateTime Date { get; set; } = DateTime.UtcNow;
         public string MealType { get; set; }
         public string NutritionId { get; set; }
-        public Meal Meal { get; set; }
     }
 }
